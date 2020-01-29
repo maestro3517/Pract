@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  lists: Array<any>;
   constructor() { }
 
   ngOnInit() {
+    this.lists = Array(5).fill(null);
   }
+
 
 }
